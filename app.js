@@ -1,10 +1,9 @@
-window.onscroll = function() {scrollFunction()};
-      
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    x.className = "topnav";
   }
 }
 
